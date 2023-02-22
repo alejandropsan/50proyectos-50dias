@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("./img/fondoclaroSuave.png")
+    no-repeat;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+h1 {
+    color: rgb(185, 255, 232);
+    background-color: rgb(65, 85, 121);
+    box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.3);
+    font-size: 50px;
+    padding: 10px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    border: 2px solid #02fd94;
+}
+
+.box {
+    background-color: rgb(105, 221, 236);
+    color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 150px;
+    margin: 30px;
+    border: 2px solid #232323b0;
+    box-shadow: 2px 1px 3px #232323;
+    border-radius: 10px;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+    transform: translateX(400%);
+    transition: transform 0.5s ease;
+}
+
+.box:nth-of-type(even) {
+    transform: translateX(-400%);
+}
+
+.box.show {
+    transform: translateX(0%);
+}
+
+.box h2 {
+    font-size: 45px;
+}
+
+footer {
+    height: 65px;
+    margin-top: 95px;
+}
+
+footer cite {
+    height: 50px;
+    margin: 100px;
+    margin-left: 10px;
+    color: rgb(13, 65, 47);
+    padding: 20px;
+    font-size: 22px;
+    border-radius: 10px;
+    border: 2px solid #51ce9a;
+}

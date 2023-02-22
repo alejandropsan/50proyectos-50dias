@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+* {
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Ubuntu', sans-serif;
+    height: 90vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.bg {
+    background: url("./img/keiichi-isokawa-TbFSjmMXEPw-unsplash.jpg")
+      no-repeat center center/cover;
+    position: absolute;
+    top: -30px;
+    left: -30px;    
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    filter: blur(0px);
+    overflow: hidden;
+}
+
+.loading-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: #fff;
+}
+
+footer {
+    position: relative;
+    background-image: linear-gradient(60deg, #000105, #0c0041);
+    padding: 10px;
+    font-size: 18px;
+    color: aliceblue;
+}
+
+footer a {
+    text-decoration: none;
+    color: aqua;
+}
+
